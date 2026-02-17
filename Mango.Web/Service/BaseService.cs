@@ -18,7 +18,7 @@ namespace Mango.Web.Service
         }
         public async Task<ResponseDto?> SendAsync(RequestDto requestDto)
         {
-            HttpClient client = _httpClientFactory.CreateClient("Mang-oAPI");
+            HttpClient client = _httpClientFactory.CreateClient("MangoAPI");
             HttpRequestMessage message = new();
             message.Headers.Add("Accept", "application/json");
             // token
